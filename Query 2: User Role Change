@@ -1,4 +1,4 @@
-Query 2# Identifying if a user role was changed for a team in the last 7 days
+\\ Query 2# Identifying if a user role was changed for a team in the last 7 days
 
 <Team Log Name>
 | where TimeGenerated > now(-7d)
