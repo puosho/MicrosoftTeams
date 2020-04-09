@@ -1,0 +1,7 @@
+// Query 1# Identifying if a specific user was added to any teams channel in the last 7 days
+
+
+<Team Log Name>
+| where TimeGenerated > now(-7d)
+| where Operation_s == "MemberAdded"
+| where Members_s contains "UserName"
