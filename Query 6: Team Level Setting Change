@@ -1,4 +1,5 @@
-Query 6# If any teams settings were changed, that are specific for that teams in the last 7 days
+\\ Query 6# If any teams settings were changed, that are specific for that teams in the last 7 days
+
 <Team Log Name>
 | where TimeGenerated > now(-7d)
 | where Operation_s == "TeamSettingChanged"
