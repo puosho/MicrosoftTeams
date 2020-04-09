@@ -1,0 +1,5 @@
+\\ Query 7# Identify is any team were deleted in in the last 7 days
+
+<Team Log Name>
+| where TimeGenerated > now(-7d)
+| where Operation_s == " TeamDeleted"
