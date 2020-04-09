@@ -1,4 +1,4 @@
-Query 5# To identify if any settings for teams, that effects the organization - teams setting at the tenant level, performed by an admin in the last 7 days
+// Query 5# To identify if any settings for teams, that effects the organization - teams setting at the tenant level, performed by an admin in the last 7 days
 
 <Team Log Name>
 | where TimeGenerated > now(-7d)
